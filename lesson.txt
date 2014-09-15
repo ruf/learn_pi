@@ -29,9 +29,10 @@ Lesson 5: Before programming
     poweron / poweroff
     login / logout
     switch VT consoles // ALT-Fx
+    cmdline edit : UP/DOWN/LEFT/RIGHT/HOME/END/BKSPC/DEL/ENTER/TAB
+    Break with ^C / Exit with ^D
     cd, pwd, mkdir, rmdir, rm, ls -l, w
     nano  // print("Hello, David!")
-    Break with ^C / Exit with ^D
     
 Lesson 6: Using python
     python console / ^D exit
@@ -40,7 +41,7 @@ Lesson 6: Using python
 Lesson 7: Typeof
     int, str, float, bool
     int/float: + - * / ()
-    str: "" '' +
+    str: "" """ +
     bool: > < == !=
     
 Lesson 8: Variable
@@ -59,8 +60,23 @@ Lesson 10: Simplest python program
     nano, ^X, Y, hello.py
     python hello.py
     
-    
+Lesson 11: Guess?
+-----------------
+import random
 
-    
+MIN, MAX = 1, 100
+print("I have a number between %d and %d, can you guess it?" %(MIN, MAX))
+n = random.randint(MIN, MAX)
+for i in range(1, 10):
+  x = input("Guess %d ? " % i)
+  if x == n:
+    print(" - Bingo!")
+    break
+  if x > n:
+    print(" - Too big ...")
+  else:
+    print(" - Too small ...")
+-----------------
 
-    
+
+
