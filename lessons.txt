@@ -133,7 +133,7 @@ Lesson 13: Guess?
     input 10 numbers, print the biggest one!
     -----------
 
-Lesson 14: Tuple
+Lesson 14: Tuples
     a = (1, 2, 3, 4, 5)
     3 in a
     for x in a:
@@ -145,7 +145,7 @@ Lesson 14: Tuple
     input 10 numbers, How many even numbers occurs?
     -----------
 
-Lesson 15: List
+Lesson 15: Lists
     a = [1, 2, 3, 4, 5]
     b = range(1, 6)
     c = []
@@ -160,7 +160,7 @@ Lesson 15: List
     input 10 numbers, sort and print it!
     -----------
 
-Lesson 16: Map
+Lesson 16: Maps
     a = {"dad":"Bob", "mom":"Duling", "son":"David"}
     a["son"]
     len(a)
@@ -170,3 +170,25 @@ Lesson 16: Map
     save in map variable, and print the name of the dragongly
     -----------
 
+Lesson 17: Turtles
+    from turtle import *
+    fd(100) or forward(100)
+    backward(100) or bk(100) or back(100)
+    right(90) or rt(90)
+    left(90) or lt(90)
+    home()
+    goto(x, y)
+    pendown() or pd() or down()
+    penup() or pu() or up()
+    pensize(r) or width(r)
+    understand 2D axis, angle
+    --- job ---
+    draw red flowers with green leaves
+    -----------
+    
+Lesson 18: Turtles
+    import turtle
+    t1 = Turtle()
+    t2 = Turtle()
+    t1.fd(100)
+    
