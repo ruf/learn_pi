@@ -73,6 +73,7 @@ Lesson 9: Function
     name = raw_input("Name? ")
     choice = input("1, 2 or 3? ")
     random.randint(1, 100) // import random
+	time.sleep(5) // import time
     --- job ---
     one line, ask for a number and return number * 3
     -----------
@@ -86,7 +87,32 @@ Lesson 10: Simplest python program
     David, Nice to meet you!
     -----------
     
-Lesson 11: Guess?
+Lesson 11: Condition
+	if bool:
+	  do something
+	else:
+	  one more thing
+	
+	two spaces indent, statement block
+    --- job ---
+    if input "david", say "Welcome back", otherwise say "Hello"
+    -----------
+	
+Lesson 12: Loop
+	for i in range(1, 20):
+	  print(i) 
+	  
+	k = 1
+	while k < 20:
+	  print(k)
+	  k = k + 1
+	  
+	range(1,100,10)
+    --- job ---
+    counting down from 10 to 1(every second), and fire!
+    -----------
+
+Lesson 13: Guess?
     --- guess.py ---
     import random
     
@@ -104,5 +130,8 @@ Lesson 11: Guess?
         print(" - Too small ...")
     ----------------
 
+    --- job ---
+    input 10 numbers, print the biggest one!
+    -----------
 
 
