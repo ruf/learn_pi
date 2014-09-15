@@ -50,7 +50,7 @@ Lesson 6: Using python
     
 Lesson 7: Typeof
     int, str, float, bool
-    int/float: + - * / ()
+    int/float: + - * / % ()
     str: "" """ + %
     bool: > < == !=
     convert type : int(), str(), i + 0.0
@@ -129,9 +129,44 @@ Lesson 13: Guess?
       else:
         print(" - Too small ...")
     ----------------
-
     --- job ---
     input 10 numbers, print the biggest one!
     -----------
 
+Lesson 14: Tuple
+    a = (1, 2, 3, 4, 5)
+    3 in a
+    for x in a:
+      print x
+    len(a)
+    a[0], a[-1]
+    a.count(3)
+    --- job ---
+    input 10 numbers, How many even numbers occurs?
+    -----------
+
+Lesson 15: List
+    a = [1, 2, 3, 4, 5]
+    b = range(1, 6)
+    c = []
+    for x in c:
+      c = c + [x * x]
+    d = [x * x for x in a]
+    e = [random.randint(1, 100) for x in range(0, 10)]
+    len(e)
+    e.reverse()
+    e.sort()
+    --- job ---
+    input 10 numbers, sort and print it!
+    -----------
+
+Lesson 16: Map
+    a = {"dad":"Bob", "mom":"Duling", "son":"David"}
+    a["son"]
+    len(a)
+    [ a[title] + " is " + title for title in a ]
+    --- job ---
+    There are 5 animals, ["dog", "cat", "dragonfly", "mouse", "cow"], input their name,
+    save in map variable, and print the name of the dragongly
+    -----------
 
