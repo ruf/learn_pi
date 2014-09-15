@@ -8,7 +8,7 @@ Lesson 1: Why programming?
     Computer has no AI, you are playing with results of other people's programming
     Programming give you the whole control of a computer
     You can resolve many problems via programming
-    Programming to create software, share to other people
+    Programming to create software, share to the world
 
 Lesson 2: Why python?
     Easy to start
@@ -23,7 +23,9 @@ Lesson 3: Why Raspberry Pi (RPi)?
 Lesson 4: Assemble your RPi
     RPi, keyboard, HDMI-to-DVI cable, Monitor, USB Charger
     8GB SD card for storing OS and data
-    Connect and poweron
+    --- job ---
+    Assemble your RPi and power on
+    -----------
 
 Lesson 5: Before programming
     poweron / poweroff
@@ -33,50 +35,74 @@ Lesson 5: Before programming
     Break with ^C / Exit with ^D
     cd, pwd, mkdir, rmdir, rm, ls -l, w
     nano  // print("Hello, David!")
+    --- job ---
+    store all your python files in ~/study/
+    Hello, David!
+    -----------
     
 Lesson 6: Using python
     python console / ^D exit
     1 + 2 + 3, (3 + 4) * 5
+    --- job ---
+    sum 1 + 2 + ... + 10
+    sum 1 + 2 + ... + 100
+    -----------
     
 Lesson 7: Typeof
     int, str, float, bool
     int/float: + - * / ()
-    str: "" """ +
+    str: "" """ + %
     bool: > < == !=
+    convert type : int(), str(), i + 0.0
+    --- job ---
+    str "I = 1 and C = 100"
+    -----------
     
 Lesson 8: Variable
     X = Y
     X = X + 1
     S = S1 + " " + S2
+    --- job ---
+    n = 1
+    n = (n + 1) * (5 - n)
+    print n * n
+    -----------
     
 Lesson 9: Function
     print(1)
     name = raw_input("Name? ")
     choice = input("1, 2 or 3? ")
+    random.randint(1, 100) // import random
+    --- job ---
+    one line, ask for a number and return number * 3
+    -----------
     
 Lesson 10: Simplest python program
     name = raw_input("What is you name? ")
     print("Hello, " + name + "!")
     nano, ^X, Y, hello.py
     python hello.py
+    --- job ---
+    David, Nice to meet you!
+    -----------
     
 Lesson 11: Guess?
------------------
-import random
-
-MIN, MAX = 1, 100
-print("I have a number between %d and %d, can you guess it?" %(MIN, MAX))
-n = random.randint(MIN, MAX)
-for i in range(1, 10):
-  x = input("Guess %d ? " % i)
-  if x == n:
-    print(" - Bingo!")
-    break
-  if x > n:
-    print(" - Too big ...")
-  else:
-    print(" - Too small ...")
------------------
+    --- guess.py ---
+    import random
+    
+    MIN, MAX = 1, 100
+    print("I have a number between %d and %d, can you guess it?" % (MIN, MAX))
+    n = random.randint(MIN, MAX)
+    for i in range(1, 10):
+      x = input("Guess %d ? " % i)
+      if x == n:
+        print(" - Bingo!")
+        break
+      if x > n:
+        print(" - Too big ...")
+      else:
+        print(" - Too small ...")
+    ----------------
 
 
 
