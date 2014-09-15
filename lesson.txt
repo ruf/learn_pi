@@ -1,0 +1,66 @@
+Learning Python on Raspberry Pi
+written by ruf <bob.wolfe@gmail.com>
+for my 7-years old son
+started at 2014-10-10
+
+
+Lesson 1: Why programming?
+    Computer has no AI, you are playing with results of other people's programming
+    Programming give you the whole control of a computer
+    You can resolve many problems via programming
+    Programming to create software, share to other people
+
+Lesson 2: Why python?
+    Easy to start
+    Powerful
+    Extensible
+
+Lesson 3: Why Raspberry Pi (RPi)?
+    Linux based, full functional small PC
+    TUI is enough for studying programming
+    Good platform for python
+    
+Lesson 4: Assemble your RPi
+    RPi, keyboard, HDMI-to-DVI cable, Monitor, USB Charger
+    8GB SD card for storing OS and data
+    Connect and poweron
+
+Lesson 5: Before programming
+    poweron / poweroff
+    login / logout
+    switch VT consoles // ALT-Fx
+    cd, pwd, mkdir, rmdir, rm, ls -l, w
+    nano  // print("Hello, David!")
+    Break with ^C / Exit with ^D
+    
+Lesson 6: Using python
+    python console / ^D exit
+    1 + 2 + 3, (3 + 4) * 5
+    
+Lesson 7: Typeof
+    int, str, float, bool
+    int/float: + - * / ()
+    str: "" '' +
+    bool: > < == !=
+    
+Lesson 8: Variable
+    X = Y
+    X = X + 1
+    S = S1 + " " + S2
+    
+Lesson 9: Function
+    print(1)
+    name = raw_input("Name? ")
+    choice = input("1, 2 or 3? ")
+    
+Lesson 10: Simplest python program
+    name = raw_input("What is you name? ")
+    print("Hello, " + name + "!")
+    nano, ^X, Y, hello.py
+    python hello.py
+    
+    
+
+    
+
+    
