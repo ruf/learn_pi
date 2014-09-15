@@ -99,15 +99,15 @@ Lesson 11: Condition
     -----------
 	
 Lesson 12: Loop
-	for i in range(1, 20):
+	for i in range(20):
 	  print(i) 
 	  
-	k = 1
+	k = 0
 	while k < 20:
 	  print(k)
 	  k = k + 1
 	  
-	range(1,100,10)
+	range(5,100,10)
     --- job ---
     counting down from 10 to 1(every second), and fire!
     -----------
@@ -152,7 +152,7 @@ Lesson 15: List
     for x in c:
       c = c + [x * x]
     d = [x * x for x in a]
-    e = [random.randint(1, 100) for x in range(0, 10)]
+    e = [random.randint(1, 100) for x in range(10)]
     len(e)
     e.reverse()
     e.sort()
