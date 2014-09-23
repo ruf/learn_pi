@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import os, sys, select, termios, time, random
 
 class NonBlockingConsole(object):
@@ -26,12 +28,7 @@ with NonBlockingConsole() as nbc:
     car = road / 2
     d = 0
     for i in range(3000):
-        if d == 0:
-            e = '||'
-        elif d < 0:
-            e = '//'
-        else:
-            e = '\\\\'
+        e = {-1:'//', 0:'||', 1:'\\\\'}[d]
         print ('%4dm ' % i) + ' ' * left + e + ' ' * car + '-O-' + ' ' * (road - car) + e, '\r',
         sys.stdout.flush() # show this line ASAP
         if car < 0 or car > road: # PONG!
