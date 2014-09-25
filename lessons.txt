@@ -73,7 +73,7 @@ Lesson 9: Function
     name = raw_input("Name? ")
     choice = input("1, 2 or 3? ")
     random.randint(1, 100) // import random
-	time.sleep(5) // import time
+    time.sleep(5) // import time
     --- job ---
     one line, ask for a number and return number * 3
     -----------
@@ -88,26 +88,26 @@ Lesson 10: Simplest python program
     -----------
     
 Lesson 11: Condition
-	if bool:
-	  do something
-	else:
-	  one more thing
-	
-	two spaces indent, statement block
+    if bool:
+      do something
+    else:
+      one more thing
+    
+    two spaces indent, statement block
     --- job ---
     if input "david", say "Welcome back", otherwise say "Hello"
     -----------
-	
+    
 Lesson 12: Loop
-	for i in range(20):
-	  print(i) 
-	  
-	k = 0
-	while k < 20:
-	  print(k)
-	  k = k + 1
-	  
-	range(5,100,10)
+    for i in range(20):
+      print(i) 
+      
+    k = 0
+    while k < 20:
+      print(k)
+      k = k + 1
+      
+    range(5,100,10)
     --- job ---
     counting down from 10 to 1(every second), and fire!
     -----------
@@ -192,3 +192,7 @@ Lesson 18: Turtles
     t2 = Turtle()
     t1.fd(100)
     
+Lesson 19: Write function
+    def function_name(variable1, ...):
+      do_something
+      return result
