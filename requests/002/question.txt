@@ -1,0 +1,30 @@
+﻿29路公交车一共停八站，车上最多能容纳40名乘客。请设计一个程序，计算出公交车上人最多的时候有多少乘客。要求能检查输入的错误，不要出现不合理的情况，例如超载，负数，到终点还有人不下车，等等
+
+例如：
+
+$ python bus29.py
+
+[BUS 29 STOP NO.1]
+How many people get on ? 15
+
+Bus moving ...
+
+[BUS 29 STOP NO.2]
+How many people get off ? 18
+Bad input! There are only 15 people on the bus.
+How many people get off ? 8
+And how many people get on ? 39
+Bad input! There are only 33 free seats on the bus.
+And how many people get on ? 9
+
+Bus moving ...
+
+... ... ... ... 
+
+[BUS 29 STOP NO.8]
+How many people get off ? 18
+Bad input! This is the final stop and 28 people still on the bus.
+How many people get off ? 28
+
+There were up to 35 people on the bus.
+
