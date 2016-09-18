@@ -1,0 +1,39 @@
+﻿红星旅馆有十二间客房，连续编号从 101 到 112。现在需要您写个房间分配程序，要求是：
+
+1、一次分配一个房间，或者收回一个房间
+2、尽量先分配编号小的房间，不能把一个房间分配给多位客人
+3、如果客满了，或者用户输入错了，要输出有效的提示信息
+
+执行效果应该如下：
+
+$ python front_desk.py
+
+What can I help you (1-check in, 2-check out) ? 1
+You room number is 101, this is your room key.
+There are 11 free rooms left.
+
+What can I help you (1-check in, 2-check out) ? 1
+You room number is 102, this is your room key.
+There are 10 free rooms left.
+
+What can I help you (1-check in, 2-check out) ? 2
+What is your room number ? 101
+Thank you, good bye.
+There are 11 free rooms left.
+
+...
+
+What can I help you (1-check in, 2-check out) ? 2
+What is your room number ? 234
+Sorry the room number is wrong.
+
+...
+
+What can I help you (1-check in, 2-check out) ? 1
+Sorry we do not have free room now.
+no free room left.
+
+
+
+
+知识点： input, list, while, if, print
