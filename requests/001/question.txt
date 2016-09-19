@@ -31,7 +31,7 @@ Sorry the room number is wrong.
 
 What can I help you (1-check in, 2-check out) ? 1
 Sorry we do not have free room now.
-no free room left.
+No free room left.
 
 
 
