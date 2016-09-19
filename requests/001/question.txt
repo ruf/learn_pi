@@ -36,4 +36,4 @@ no free room left.
 
 
 
-知识点： input, list, while, if, print
+知识点： input, list/set, while, if, print
