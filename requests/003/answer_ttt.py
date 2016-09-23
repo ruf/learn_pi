@@ -35,4 +35,5 @@ for i in range(-1, 9):
       if b[1] == b[2] and b[1] == b[3] or b[4] == b[5] and b[4] == b[6] or b[7] == b[8] and b[7] == b[9] or b[1] == b[4] and b[1] == b[7] or b[2] == b[5] and b[2] == b[8] or b[3] == b[6] and b[9] == b[3] or b[3] == b[5] and b[7] == b[3] or b[1] == b[5] and b[1] == b[9]:
         print 'X win.'
         break
-print 'Draw.'
+else:
+  print 'Draw.'
