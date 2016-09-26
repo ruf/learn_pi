@@ -9,9 +9,7 @@ for i in range(10):
   if i == 9:
     print 'Draw.'
     break
-  p = '\033[31m\033[1mO\033[0m'
-  if i % 2 > 0:
-    p = '\033[32m\033[1mX\033[0m'
+  p = '\033[31m\033[1mO\033[0m' if i % 2 == 0 else '\033[32m\033[1mX\033[0m'
   while True: 
     try:
       n = input(p + ', Where to place ? ')
