@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import os
+
 b = [ i for i in range(10) ]
 for i in range(10):
   print '\n %s | %s | %s \n---+---+---\n %s | %s | %s \n---+---+---\n %s | %s | %s \n'% (b[7], b[8],  b[9], b[4], b[5], b[6], b[1], b[2], b[3])
@@ -20,5 +22,5 @@ for i in range(10):
     except:
       if s == 'q':
         print 'Quit.'
-        break
+        os.sys.exit(0)
     print 'Bad input!'
