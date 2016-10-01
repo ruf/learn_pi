@@ -12,10 +12,13 @@ for i in range(10):
   p = '\033[31m\033[1mO\033[0m' if i % 2 == 0 else '\033[32m\033[1mX\033[0m'
   while True: 
     try:
-      n = input(p + ', Where to place ? ')
+      s = raw_input(p + ', Where to place ? ')
+      n = int(s)
       if n in range(1, 10) and b[n] in range(10):
         b[n] = p
         break
     except:
-      pass
+      if s == 'q':
+        print 'Quit.'
+        break
     print 'Bad input!'
