@@ -13,6 +13,5 @@ for s in file('唐诗三百首.txt').readlines():
         m[c] += 1
       elif not c in u'，。！？':
         m[c] = 1
-
-for c in sorted(m, key=m.__getitem__, reverse=True)[:30]:
-  print c, m[c]
+for c in sorted(m, key=m.get)[-30:]:
+  print c.encode('utf-8'), m[c]
