@@ -38,7 +38,7 @@ def main(screen):
     print ' ' * (6 + left) + e + ' ' * (3 + road) + e, '\r'
     left += d
     car -= d
-    if r < 0.02:
+    if random.random() < 0.02:
       road -= 1
   return i
 

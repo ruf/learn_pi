@@ -19,15 +19,14 @@ def main(screen):
         n.append([y, x, c])
         miss += 1
         t /= 0.95
-    for z in n:
-      m.remove(z)
-    screen.addstr(0, 0, '  Hit:%d  Miss:%d  Speed:%.2fX  ' % (hit, miss, 1 / t), curses.A_REVERSE)
+    screen.box()
+    screen.addstr(0, 2, '  Hit:%d  Miss:%d  Speed:%.2fX  ' % (hit, miss, 1 / t), curses.A_REVERSE)
     screen.refresh()
     time.sleep(0.05)
     k = screen.getch()
     if k == curses.KEY_UP:
       break
-    n = []
+    old_hit = hit
     for y, x, c in m:
       screen.addstr(y, x, ' ')
       if k == ord(c):
@@ -35,19 +34,17 @@ def main(screen):
         hit += 1
         if hit % 20 == 0:
           t *= 0.95
-    if n:
-      for z in n:
-        m.remove(z)
-    elif k != -1: # wrong key
+    for z in n:
+      m.remove(z)
+    if k != -1 and old_hit == hit: # wrong key
       miss += 1
     now = time.time()
-    if now - last < t:
-      continue
-    last += t
-    for z in m:
-      z[0] += 1
-    c = random.choice('abcdefghijklmnopqrstuvwxyz')
-    m.append([0, random.randint(1, col - 2), c])
+    if now - last > t:
+      last += t
+      for z in m:
+        z[0] += 1
+      c = random.choice('abcdefghijklmnopqrstuvwxyz')
+      m.append([1, random.randint(1, col - 2), c])
   return 'Final score is %d' % hit
 
 print curses.wrapper(main)
